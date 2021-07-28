@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Employees(models.Model):
-    json_data=models.JSONField(default='{}')
+    json_data = models.JSONField(default=dict)
     # firstname=models.CharField(max_length=10)
     # lastname=models.CharField(max_length=10)
     # emp_id=models.IntegerField()
